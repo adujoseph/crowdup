@@ -6,7 +6,8 @@ import Request from "./pages/Request";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Projects from "./pages/Projects";
-import Account from "./pages/Account"
+import Account from "./pages/Account";
+import ProjectDetails from "./pages/ProjectDetails";
 import "./App.css";
 
 function App() {
@@ -25,13 +26,17 @@ function App() {
           handleConnect={handleConnect}
           connect={connect}
         />
+        <div className={'min-height'}> 
         <Routes>
           <Route path="/" element={<Home handleConnect={handleConnect} />} />
           <Route path="/request" element={<Request />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/account" element={<Account />} />
+          <Route path="/project_details/:id" element={<ProjectDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </div>
+  
         <Footer />
       </BrowserRouter>
     </main>

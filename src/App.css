@@ -48,6 +48,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.min-height{
+    min-height: 90vh;
+}
 
 /* --------------------------------- COMMUNICATION ---------------------- */
 .communication .whatsapp-card {
