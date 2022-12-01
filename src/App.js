@@ -6,6 +6,7 @@ import Request from "./pages/Request";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Projects from "./pages/Projects";
+import Account from "./pages/Account"
 import "./App.css";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<Home handleConnect={handleConnect} />} />
           <Route path="/request" element={<Request />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/account" element={<Account />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
