@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .input {
+    @apply border outline-blue-200 p-2 rounded-lg text-gray-500 w-full;
+  }
+  .label {
+    @apply text-sm font-bold capitalize;
+  }}
